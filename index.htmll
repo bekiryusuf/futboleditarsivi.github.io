@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futbol Edit Arşivi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #00ff99;
+    }
+    input {
+      padding: 10px;
+      width: 60%;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+    .edit-list {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+    .edit-item {
+      background: #1e1e1e;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+    .edit-item a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚽ Futbol Edit Arşivi</h1>
+  <input type="text" id="search" placeholder="Edit adıyla ara..." onkeyup="searchEdit()" />
+
+  <div class="edit-list" id="editList">
+    <div class="edit-item"><a href="https://example.com/video1.mp4" target="_blank">🔥 Ronaldo - Beast Mode Edit</a></div>
+    <div class="edit-item"><a href="https://example.com/video2.mp4" target="_blank">🎯 Messi - Magical Moments</a></div>
+    <div class="edit-item"><a href="https://example.com/video3.mp4" target="_blank">💥 Haaland - Goal Machine</a></div>
+  </div>
+
+  <script>
+    function searchEdit() {
+      const input = document.getElementById("search").value.toLowerCase();
+      const items = document.querySelectorAll(".edit-item");
+      items.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
