@@ -1,17 +1,1 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Futbol Edit Arşivi</title>
-</head>
-<body>
-  <h1>Futbol Edit Arşivi</h1>
-  <p>Popüler futbol editlerini izle veya indir:</p>
 
-  <ul>
-    <li><a href="https://example.com/video1.mp4" target="_blank">Cristiano Ronaldo Edit</a></li>
-    <li><a href="https://example.com/video2.mp4" target="_blank">Messi vs Mbappe</a></li>
-  </ul>
-</body>
-</html>
